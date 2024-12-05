@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-gradient"></div>
+        <div class="background-pattern"></div>
+        <div class="geometric-overlay" id="geometric-overlay"></div>
+    </div>
+    
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Quiz Master</h1>
+            <div class="score-tracker">
+                <span>Score: <span id="current-score">0</span></span>
+                <span>Time: <span id="timer">60</span>s</span>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="quiz-screen">
+            <div class="question-container">
+                <h2 id="question-text">Loading question...</h2>
+                <div class="answer-options" id="answer-options">
+                    <!-- Answers will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="result-screen hidden">
+            <div class="result-content">
+                <h2>Quiz Completed!</h2>
+                <p>Your Final Score: <span id="final-score">0</span></p>
+                <div class="result-actions">
+                    <button id="restart-btn" class="btn">Restart Quiz</button>
+                    <button id="review-btn" class="btn">Review Answers</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
